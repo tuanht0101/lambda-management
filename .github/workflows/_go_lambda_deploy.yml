@@ -36,15 +36,15 @@ jobs:
 
         # set env config
         - run: |
-            echo "AWS_ACCOUNT_ID=<AWS_ACCOUNT_ID_DEV>" >> $GITHUB_ENV
+            echo "AWS_ACCOUNT_ID=236357498522" >> $GITHUB_ENV
             echo "ENV_PREFIX=dev" >> $GITHUB_ENV
           if: github.ref == 'refs/heads/develop'
         - run: |
-            echo "AWS_ACCOUNT_ID=<AWS_ACCOUNT_ID_STAGING>" >> $GITHUB_ENV
+            echo "AWS_ACCOUNT_ID=236357498522" >> $GITHUB_ENV
             echo "ENV_PREFIX=stg" >> $GITHUB_ENV
           if: github.ref == 'refs/heads/staging'
         - run: |
-            echo "AWS_ACCOUNT_ID=<AWS_ACCOUNT_ID_PRODUCTION>" >> $GITHUB_ENV
+            echo "AWS_ACCOUNT_ID=236357498522" >> $GITHUB_ENV
             echo "ENV_PREFIX=prod" >> $GITHUB_ENV
           if: github.ref == 'refs/heads/production'
           
